@@ -1,0 +1,16 @@
+Algos
+
+/ 1. 2 pointer approach
+2. bit manipulation
+3. greedy algo
+/ 4. sliding window approach
+5. prefix sum - segment tree - fenwic tree
+/ 6. binary search
+7. hashing
+8. heapification(min heap, max heap)
+/ 9. stack (monotonic stack)
+10. recursion
+11. job scheduling algo(shortest job first- sjf)
+12. memorization (optimization of recursion)
+13. tabulation ( memorization's space optimization) - Dynamic programming
+14. 

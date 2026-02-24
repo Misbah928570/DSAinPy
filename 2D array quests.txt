@@ -1,0 +1,15 @@
+2D array :
+1. matrix ip, op
+2. sum of all elements in the 2d matrix
+3. count of even nums in 2d matrix
+4. print sum of every rows separately 
+5. transpose of the matrix without taking extra space
+6. rotate matrix 90 deg clockwise
+7. product of 2 matrices
+8. sum of elements in left and right diagonal
+9. sum of border elements
+
+Strings:
+/y 2390 leet
+2325 leet
+/y 520 leet
