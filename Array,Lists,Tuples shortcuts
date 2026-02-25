@@ -1,0 +1,8 @@
+Array/Lists/Tuples shortcuts
+
+# sorting array with a key : 
+- Sort by 'name' (primary key) and then 'age' (secondary key) : sorted_data = sorted(data, key=lambda x: (x['name'], x['age']))
+
+// Sort by name, then by age if names are the same
+    return a.name.localeCompare(b.name) || a.age - b.age;
+
