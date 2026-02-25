@@ -36,3 +36,6 @@ class Solution:
                 l += 1
             ans += l
         return ans
+
+LC992 : 
+App - exactlyK = atMost(K) - atMost(K-1)
