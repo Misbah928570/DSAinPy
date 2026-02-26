@@ -1,4 +1,7 @@
 ##FEB:
 - Goal : completing -- Advanced Sliding wind, recursion, advanced stacks before FEB ends.
 - Topic : Advanced Sliding wind
-- Progress :  ⏳
+- Progress :  ✅
+26-02
+- topic : Binary search on answer
+- progress : ⏳
