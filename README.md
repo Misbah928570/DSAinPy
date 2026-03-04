@@ -7,11 +7,11 @@
 - progress : ✅
 
 ##Mar:
-- Goal : . completing recursion & backtracking, ⏳
-         . heap and priority Queues,
-         . Sliding window,
-         . Adv Binary search,
-         . Tree Basics
+- Goal : - completing recursion & backtracking, ⏳
+         - heap and priority Queues,
+         - Sliding window,
+         - Adv Binary search,
+         - Tree Basics
 
 - Topic : Recursion & backtracking
 - Progress - ⏳
