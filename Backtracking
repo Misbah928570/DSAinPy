@@ -3,3 +3,20 @@ There are three index patterns in backtracking:
 1️⃣ i+1  → move forward (subsets, combinations without reuse)
 2️⃣ i    → allow reuse (combination sum)
 3️⃣ visited / swap → permutations
+
+## constraint-checking backtracking, where we must validate choices before continuing.
+```
+def backtrack(start, path):
+    if start == len(s):
+        ans.append(path[:])
+        return
+
+    for end in range(start, len(s)):
+        substring = s[start:end+1]
+
+        if isPalindrome(substring):
+            path.append(substring)
+            backtrack(end+1, path)
+            path.pop()
+```
+
