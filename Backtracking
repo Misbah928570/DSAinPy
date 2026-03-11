@@ -20,3 +20,20 @@ def backtrack(start, path):
             path.pop()
 ```
 
+->> N-QUEENS
+pattern:
+```
+solve(row):
+
+    if row == n:
+        add board to result
+        return
+
+    for col in range(n):
+        if safe(row,col):
+            place queen
+            solve(row+1)
+            remove queen (BACKTRACK)
+```
+- Time comp -- worst case = O(n!)
+- but pruning is there so it will be less than n! only
