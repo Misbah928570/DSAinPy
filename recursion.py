@@ -16,7 +16,7 @@ def power(x,n):
         return x * half * half
 print(power(2,2))
 
-
+#to check ifthe array is sorted 
 def issorted(arr,n):
     if n == 1:
         return True
