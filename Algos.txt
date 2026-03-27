@@ -9,7 +9,7 @@ Algos
 7. hashing
 8. heapification(min heap, max heap)
 / 9. stack (monotonic stack)
-10. recursion
+-> 10. recursion
 11. job scheduling algo(shortest job first- sjf)
 12. memorization (optimization of recursion)
 13. tabulation ( memorization's space optimization) - Dynamic programming
