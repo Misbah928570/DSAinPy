@@ -37,3 +37,4 @@ solve(row):
 ```
 - Time comp -- worst case = O(n!)
 - but pruning is there so it will be less than n! only
+
