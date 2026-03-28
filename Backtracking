@@ -38,3 +38,62 @@ solve(row):
 - Time comp -- worst case = O(n!)
 - but pruning is there so it will be less than n! only
 
+->> N queens optimal soln using sets
+```
+class Solution:
+    def totalNQueens(self, n):
+
+        count = 0
+
+        col_set = set()
+        diag1 = set()
+        diag2 = set()
+
+        def backtrack(row):
+            nonlocal count
+
+            if row == n:
+                count += 1
+                return
+
+            for col in range(n):
+
+                if col in col_set or (row-col) in diag1 or (row+col) in diag2:
+                    continue
+
+                col_set.add(col)
+                diag1.add(row - col)
+                diag2.add(row + col)
+
+                backtrack(row + 1)
+
+                col_set.remove(col)
+                diag1.remove(row - col)
+                diag2.remove(row + col)
+
+        backtrack(0)
+        return count
+```
+
+->> N-queens 2 (LC50)
+// we need to count the solns 
+1. create col_set, diag1, diag2, count=0
+2. back(row):
+        base case;
+        if n==row:
+            count++;return;
+        for col in range(n):
+            if col in col_set or (row+col) in d2 or (row-col) in d1:
+                continue
+            add col 
+            add row+col
+            add row-col
+
+            back(row+1)
+
+            remove col
+            remove row+col
+            remove row-col
+3. back(0)
+4. return count
+
