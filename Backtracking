@@ -97,3 +97,18 @@ class Solution:
 3. back(0)
 4. return count
 
+==> In N-Queens, you used:
+    cols
+    diag1
+    diag2
+👉 This is an optimization trick
+Instead of checking whole board → O(N²)
+You reduced it to → O(1 checks using sets)
+
+BITMASKING::
+- we use binary nums instead of set
+- set is slower whereas bitmasking is faster
+- for eg: col = 010010 -> means col 1 & 4 occupied
+  col:   5 4 3 2 1 0
+  bits:  0 1 0 0 1 0
+
