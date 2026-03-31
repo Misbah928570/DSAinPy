@@ -111,4 +111,36 @@ BITMASKING::
 - for eg: col = 010010 -> means col 1 & 4 occupied
   col:   5 4 3 2 1 0
   bits:  0 1 0 0 1 0
+we use:
+        if (cols >> col) & 1:
+"cols>>col" will shift the num and "& 1" extracts the last digit from shifted number.
+> for placing the queen we do:
+        cols = cols | (1 << col)
+> for removing the queen:
+        cols = cols & ~(1 << col)
 
+== Final Pattern
+```
+def backtrack(row, cols, diag1, diag2):
+    if row == n:
+        return 1
+    count = 0
+    for col in range(n):
+        if (cols >> col) & 1:
+            continue
+        
+        if (diag1 >> (row + col)) & 1:
+            continue
+        
+        if (diag2 >> (row - col + n)) & 1:
+            continue
+        
+        count += backtrack(
+            row + 1,
+            cols | (1 << col),
+            diag1 | (1 << (row + col)),
+            diag2 | (1 << (row - col + n))
+        )
+    
+    return count
+```
