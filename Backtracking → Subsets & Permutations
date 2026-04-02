@@ -54,3 +54,26 @@ Use when:
 2. Fast iteration needed
 3. No constraints
 
+NOTE ::
+        i+1                           --	move forward (no reuse)
+if i > start and nums[i] == nums[i-1]	-- skip duplicates
+
+eg, LC90::
+```
+class Solution:
+    def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
+        nums.sort()
+        res= []
+        n = len(nums)
+        def back(start, curr):
+            res.append(curr[:]) 
+            for i in range(start, n):
+                if i > start and nums[i] == nums[i-1]:
+                    continue
+                curr.append(nums[i])
+                back(i+1,curr)
+                curr.pop()
+                
+        back(0,[])
+        return res
+```
