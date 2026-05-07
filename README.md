@@ -13,6 +13,10 @@
 ##Apr:
 - Goal :
            - Backtracking -> subsets & permutations ⏳
+           
+
+##May:
+-Goal :
            - prefix sum
            - Heaps
           * - Priority queues
