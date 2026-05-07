@@ -19,4 +19,4 @@
 -Goal :
            - prefix sum
            - Heaps
-          * - Priority queues
+          *- Priority queues
