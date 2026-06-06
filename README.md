@@ -15,8 +15,10 @@
            - Backtracking -> subsets & permutations ⏳
            
 
-##May:
+##MJune:
 -Goal :
            - prefix sum
            - Heaps
           *- Priority queues
+
+          
