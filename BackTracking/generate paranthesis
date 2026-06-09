@@ -1,0 +1,17 @@
+for n = 1: op = ["()"]
+    n = 2: op = ["(())","()()"]
+```
+def generateParenthesis(self, n: int) -> List[str]:
+  res = []
+  def back(open_cnt, close_cnt, curr):
+      if len(curr) == 2*n:
+          res.append(curr)
+          return 
+      if open_cnt < n:
+          back(opn_cnt+1, close_cnt, curr + "(")
+      if close_cnt < open_cnt:
+          back(open_cnt, close_cnt+1, curr + ")")
+  back(0,0,"")
+  return res
+```
+note:   since strings are immutable we modify string in the function call, where the new string is created in the every new recursion loop
